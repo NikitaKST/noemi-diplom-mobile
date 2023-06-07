@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport=winwows device-->
-    <link rel="stylesheet" href="css/style-desktop" media="screen and (min-width: 1200px)">
-    <link rel="stylesheet" href="css/style-tablet"  media="screen and (min-width: 641px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--viewport=winwows device-->
     <link rel="stylesheet" href="css/style-mobile.css">
+    <link rel="stylesheet" href="css/style-tablet.css"  media="screen and (min-width: 641px)">
+    <link rel="stylesheet" href="css/style-desktop.css" media="screen and (min-width: 1200px)">
     <title>Макет NOEMI-mobile-first</title>
 </head>
 <body>
 
     <!--HEADER-->
     <header class="header">
-        <div class="header-container">
-            <div class="menu">
-                <a href="#0" class="logo">
-                    <img src="svg/noemi-logo.svg" alt="Логотип NOEMI" class="logo-img">
+        <div class="header__container">
+            <div class="header__content">
+                <a href="#0" class="header__logo">
+                    <img src="svg/noemi-logo.svg" alt="Логотип NOEMI" class="header__logo-img">
                 </a>
-                <nav class="menu-header">
+                <nav class="header__menu">
                     <ul class="menu-list">
                         <li class="menu-item">
                             <a class="menu-link" href="#0">Главная</a>
@@ -40,16 +41,16 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="menu__button">
-                    <span class="menu__button-label"></span>
+                <button class="header__burger">
+                    <span class="header__burger-label"></span>
                 </button>
             </div>
-            <h1 class="header-title">Блог о творчестве, спорте, и образе жизни
+            <h1 class="header__title">Блог о творчестве, спорте, и образе жизни
             </h1>    
         </div>
     </header>
     
-    <!--TRANDS--> 
+    <!-- TRANDS 
     <section class="trands-wrap">
         <h5 class="trands-title">сейчас в тренде</h5>
         <div class="trands">
@@ -117,7 +118,7 @@
         </div>
     </section>
     
-    <!--MAIN-->
+    MAIN
     <div class="page-wrap">
         <main class="main">
             <article class="article">
@@ -249,7 +250,7 @@
             </article>
         </main>  
         
-        <!--ASSIDE-POST-->  
+        ASSIDE-POST 
         <aside class="asside-wrap">
             <section class="sidebar">
                 <h5 class="aside-title">Новые посты</h5> 
@@ -304,7 +305,7 @@
                     </div>
                 </article>
 
-                <!--SEARCH--> 
+                SEARCH
                 <form class="search-form">
                     <label class="search-label">
                         <span class="search-hidden">Поле ввода</span>
@@ -315,7 +316,7 @@
                     </button>
                 </form>
                     
-                <!--SEND-->  
+                SEND 
                 <h5 class="aside-title">Рассылка</h5> 
                 <form class="send-form">
                     <label class="send-label">
@@ -325,7 +326,7 @@
                     <button class="send-button" alt="Поиск">Подписаться</button>
                 </form>
                     
-                <!--TAGS--> 
+                TAGS
                 <h5 class="aside-title">Теги</h5>
                 <ul class="tags-list">
                     <li class="tags-list-item">
@@ -354,7 +355,7 @@
                     </li>
                 </ul>
                     
-                <!--THEMES-->
+                THEMES
                 <h5 class="aside-title">Темы</h5>  
                 <ul class="themes-list">
                     <li class="themes-list-item">
@@ -386,7 +387,7 @@
         </aside>  
     </div>
     
-    <!--OUR PRODUCTS-->
+    OUR PRODUCTS
     
     <section class="products-wrap">
         <h5 class="products-title">наши изделия</h5>
@@ -465,7 +466,7 @@
         </div>  
     </section>
     
-    <!--FOOTER-->
+    FOOTER
     <footer class="footer-wrap">
         <div class="footer-container">
             <adress class="footer-adress">
@@ -493,7 +494,7 @@
         </a>
     </footer>
     
-    <!--POPUP-->
+    POPUP
     
     <div class="popup popup-hidden">
         <div class="popup-container">
@@ -536,6 +537,6 @@
             </div>    
         </form>
         </div>
-    </div>            
+    </div>             -->
 </body>
 </html>
