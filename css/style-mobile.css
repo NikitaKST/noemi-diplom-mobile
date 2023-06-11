@@ -208,7 +208,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   
   .trands__article {
     box-sizing: border-box;
-    width: calc((100% - 12px)/4);
+    /* width: calc((100% - 12px)/4); */
     min-height: 320px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -225,7 +225,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     min-height: 231px;    
 }
   
-  .article-wrap {
+  .article__wrap {
     z-index: 2;
     border: 3px solid #b59f5b;
     margin-bottom: 16px;
@@ -245,37 +245,37 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     padding-bottom: 22px;    
 } */
   
-  .trands-tag {
+  .trands__tag {
     display: flex;
     
   }
 
-  /* .trands-tag {
+  /* .trands__tag {
     margin-bottom: 8px;
 } */
   
-  .trands-tag-item {
+  .trands__tag-item {
     text-transform: uppercase;
     font-weight: 700;
     margin-right: 14px;
     color: #b59f5b;
   }
 
-  /* .trands-tag-item {
+  /* .trands__tag-item {
     margin-right: 20px;
 } */
   
-  .trands-tag-item:nth-last-child(1) {
+  .trands__tag-item:nth-last-child(1) {
     margin-right: 0px;  
   }
   
   
-  .trands-tag-link {
+  .trands__tag-link {
     color: inherit;
     z-index: 2;
   }
   
-  .trands-tag-link:hover {
+  .trands__tag-link:hover {
     text-decoration: underline;
   }
   
@@ -283,18 +283,18 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     margin-right: 4px;
   }
   
-  .trands-tag-title {
+  .trands__tag-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
   }
 
-  /* .trands-tag-title {
+  /* .trands__tag-title {
     font-size: 16px;
 } */
   
-  .trands-tag-title:hover {
+  .trands__tag-title:hover {
     color: #b59f5b;
   }
   
@@ -1278,7 +1278,7 @@ tablet
       padding-top: 30px;
   }
 
-  .trands-tag {
+  .trands__tag {
       margin-bottom: 6px;
   }
 
@@ -1299,7 +1299,7 @@ tablet
       margin-top: 3px;
   }
 
-  .trands-tag-title {
+  .trands__tag-title {
       font-size: 17px;
   }
 
