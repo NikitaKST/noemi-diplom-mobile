@@ -204,101 +204,21 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     box-sizing: border-box;
     width: 100%;
   }
-  
-  
+    
   .trands__article {
-    box-sizing: border-box;
-    /* width: calc((100% - 12px)/4); */
-    min-height: 320px;
+    min-height: 231px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #000000;
+    background-color: black;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 3px;
   }
 
-  .trands__article {
-    width: 100%;
-    min-height: 231px;    
-}
-  
-  .article__wrap {
-    z-index: 2;
-    border: 3px solid #b59f5b;
-    margin-bottom: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 36px;
-    padding-top: 39px;
-    padding-right: 13px;
-    padding-left: 33px;
-  }
-
-  /* .article-wrap {
-    padding-top: 28px;
-    margin-left: 14px;
-    margin-right: 14px;
-    padding-left: 20px;
-    padding-bottom: 22px;    
-} */
-  
-  .trands__tag {
-    display: flex;
-    
-  }
-
-  /* .trands__tag {
-    margin-bottom: 8px;
-} */
-  
-  .trands__tag-item {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-right: 14px;
-    color: #b59f5b;
-  }
-
-  /* .trands__tag-item {
-    margin-right: 20px;
-} */
-  
-  .trands__tag-item:nth-last-child(1) {
-    margin-right: 0px;  
-  }
-  
-  
-  .trands__tag-link {
-    color: inherit;
-    z-index: 2;
-  }
-  
-  .trands__tag-link:hover {
-    text-decoration: underline;
-  }
-  
-  .trands-post:nth-child(n + 1):nth-child(-n + 3) {
-    margin-right: 4px;
-  }
-  
-  .trands__tag-title {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-
-  /* .trands__tag-title {
-    font-size: 16px;
-} */
-  
-  .trands__tag-title:hover {
-    color: #b59f5b;
-  }
-  
-  .trands-post::before {
+  .trands__article::before {
     content: '';
     display: block;
     position: absolute;
@@ -311,44 +231,69 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     height: 100%;
     z-index: 1;
   }
-  
+
   .trands__post-img1 {
-    background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend1.jpg");
+    background-image: url("../images/trend1.jpg");
   }
 
-  /* .trands-post-img1 {
-    margin-right: 0;
-    margin-bottom: 3px;
-} */
-  
   .trands__post-img2 {
-    background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend2.jpg");
+    background-image: url("../images/trend2.jpg");
   }
 
-  /* .trands-post-img2 {
-    margin-right: 0;
-    margin-bottom: 3px;
-} */
-  
   .trands__post-img3 {
-    background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend3.jpg");
+    background-image: url("../images/trend3.jpg");
   }
-/* 
-  .trands-post-img3 {
-    margin-right: 0;
-    margin-bottom: 3px;
-} */
   
   .trands__post-img4 {
-    background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend4.jpg");
+    background-image: url("../images/trend4.jpg");
+  }
+  
+  .trands__article-wrap {
+    z-index: 2;
+    border: 3px solid var(--main-color);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 22px; /*change*/
+    padding-top: 28px;    /*change*/
+    padding-right: 13px;   /*change*/
+    padding-left: 20px;   /*change*/
+  }
+        
+  .trands__tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trands__tag-item {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 1rem;
+    color: var(--main-color);
+  }
+  
+  .trands__tag-link {
+    position: relative;
+    color: inherit;
+    z-index: 2;
+  }
+  
+  .trands__tag-link:hover {
+    text-decoration: underline;
+  }
+  
+  .trands__tag-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
   }
 
-  
-  /* .trands-post-img4 {
-    margin-top: 0;
-} */
+  .trands__tag-title:hover {
+    color: var(--main-color);
+  }
 
-  
   /*MAIN
   .page-wrap {
     box-sizing: border-box;
