@@ -86,7 +86,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .header__container {
   box-sizing: border-box;
   width: 100%;
-  min-width: 360px;
+  /* width: 360px; */
   padding: 2rem 1rem 13rem;
   margin-left: auto;
   margin-right: auto;
@@ -102,7 +102,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .header__logo-img {
   position: relative;
   z-index: 3;
-  width: 16.8rem;  
+  width: 100%;
+  max-width: 16.8rem;  
 }
 
 .header__menu {
@@ -170,42 +171,42 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   letter-spacing: 0.2px;
 }
 
-  /*TRANDS
+/* TRANDS */
   
-  .trands-wrap {
+  .trands__wrap {
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 64px;
+    margin-bottom: 2.75rem;
   }
-  
-  .trands-title {
+
+  .trands__title {
     text-transform: uppercase;
-    color: #0f0d0e;
+    color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
-    margin-bottom: 45px;  
+    margin-bottom: 1.5rem;  
   }
   
-  .trands-title::after {
+  .trands__title::after {
     content: '';
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 14px;
-    width: 66px;
+    margin-top: 0.5rem;
+    width: 4rem;
     height: 3px;
-    background: #b59f5b;
+    background: var(--main-color);
   }
   
-  .trands {
+  .trandstrands__content {
     box-sizing: border-box;
-    display: flex;
-    
+    width: 100%;
   }
   
-  .trands-post {
+  
+  .trands__article {
     box-sizing: border-box;
     width: calc((100% - 12px)/4);
     min-height: 320px;
@@ -218,6 +219,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     flex-direction: column;
     justify-content: flex-end;
   }
+
+  .trands__article {
+    width: 100%;
+    min-height: 231px;    
+}
   
   .article-wrap {
     z-index: 2;
@@ -230,11 +236,23 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     padding-right: 13px;
     padding-left: 33px;
   }
+
+  /* .article-wrap {
+    padding-top: 28px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 20px;
+    padding-bottom: 22px;    
+} */
   
   .trands-tag {
     display: flex;
     
   }
+
+  /* .trands-tag {
+    margin-bottom: 8px;
+} */
   
   .trands-tag-item {
     text-transform: uppercase;
@@ -242,6 +260,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     margin-right: 14px;
     color: #b59f5b;
   }
+
+  /* .trands-tag-item {
+    margin-right: 20px;
+} */
   
   .trands-tag-item:nth-last-child(1) {
     margin-right: 0px;  
@@ -267,6 +289,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     font-weight: bold;
     color: #ffffff;
   }
+
+  /* .trands-tag-title {
+    font-size: 16px;
+} */
   
   .trands-tag-title:hover {
     color: #b59f5b;
@@ -286,23 +312,44 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
     z-index: 1;
   }
   
-  .trands-post-img1 {
+  .trands__post-img1 {
     background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend1.jpg");
   }
+
+  /* .trands-post-img1 {
+    margin-right: 0;
+    margin-bottom: 3px;
+} */
   
-  .trands-post-img2 {
+  .trands__post-img2 {
     background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend2.jpg");
   }
+
+  /* .trands-post-img2 {
+    margin-right: 0;
+    margin-bottom: 3px;
+} */
   
-  .trands-post-img3 {
+  .trands__post-img3 {
     background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend3.jpg");
   }
+/* 
+  .trands-post-img3 {
+    margin-right: 0;
+    margin-bottom: 3px;
+} */
   
-  .trands-post-img4 {
+  .trands__post-img4 {
     background-image: url("https://raw.githubusercontent.com/NikitaKST/noemi-diplom/main/images/trend4.jpg");
   }
+
   
-  MAIN
+  /* .trands-post-img4 {
+    margin-top: 0;
+} */
+
+  
+  /*MAIN
   .page-wrap {
     box-sizing: border-box;
     max-width: 1200px;
@@ -1370,73 +1417,9 @@ tablet
 
 
 
+mobile
 
-
-  TRANDS
-  .trands-wrap {
-      margin-bottom: 44px;
-  }
-
-  .trands-title {
-      font-size: 16px;
-      margin-bottom: 24px;
-  }
-
-  .trands-title::after {
-      margin-top: 8px;    
-  }
-
-  .trands {
-      width: 100%;
-      max-width: 640px;
-      min-width: 360px;
-      flex-wrap: wrap;
-  }
-
-  .trands-post {
-      width: 100%;
-      min-height: 231px;    
-  }
-
-  .article-wrap {
-      padding-top: 28px;
-      margin-left: 14px;
-      margin-right: 14px;
-      padding-left: 20px;
-      padding-bottom: 22px;    
-  }
-
-  .trands-tag {
-      margin-bottom: 8px;
-  }
-
-  .trands-tag-item {
-      margin-right: 20px;
-  }
-
-  .trands-tag-title {
-      font-size: 16px;
-  }
-
-  .trands-post-img1 {
-      margin-right: 0;
-      margin-bottom: 3px;
-  }
-
-  .trands-post-img2 {
-      margin-right: 0;
-      margin-bottom: 3px;
-  }
-
-  .trands-post-img3 {
-      margin-right: 0;
-      margin-bottom: 3px;
-  }
-
-  .trands-post-img4 {
-      margin-top: 0;
-  }
-
+  
   MAIN
   .page-wrap {
       width: 100%;
