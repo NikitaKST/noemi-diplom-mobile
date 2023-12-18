@@ -602,7 +602,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 66px;
+  margin-bottom: 1rem;
 }
 
 .products-title {
@@ -631,13 +631,13 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
   width: 100%;
 }
 
 .products-cards {
   box-sizing: border-box;
-  padding-left: 1.375rem;
-  padding-right: 1.375rem;
 }
 
 .products-cards-img {
@@ -646,10 +646,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .cards-img {
+  width: 100%;
+  max-width: 300px;
   position: relative;
   z-index: -1;
-  /* height: 206px;
-  width: 300px; */
   background-position: center;
   background-size: cover;
 }
@@ -683,7 +683,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   font-size: 17px;
   margin-top: 1rem;
   margin-bottom: 5px;
-
 }
 
 .product-text {
@@ -694,6 +693,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .product-prices {
@@ -724,10 +724,70 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   font-weight: bold;
   text-transform: uppercase;
   padding: 1rem 2rem;
-
 }
 
 .product-button:hover {
   background-color: #000;
 }
+
+/*FOOTER*/
+.footer-wrap {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #f4f7f6;
+  margin-bottom: 3rem;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-list-item {
+  margin-right: 1.5rem;
+}
+
+.footer-list-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.footer-list-link {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dribbble {  
+  background-image: url("../svg/001-dribbble.svg");
+}
+
+.pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.tumblr {
+  background-image: url("../svg/003-tumblr.svg");
+}
+
+.footer-copyright {
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/*POPUP*/
 
