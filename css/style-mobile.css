@@ -45,7 +45,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 @font-face {
     font-family: "OpenSans";
     src: local("OpenSans"), url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("woff");
-    font-weight: 400; /*можно удалить*/
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
   } 
@@ -53,7 +53,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 @font-face {
     font-family: "OpenSans";
     src: local("OpenSans"), url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff) format("woff");
-    font-weight: 700; /*можно удалить*/
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
@@ -65,7 +65,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   background-image: url("../images/banner-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
+  background-color: #000;
   margin-bottom: 40px;
 }
 
@@ -78,16 +78,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
-  /* display: block;
-  left: 0;
-  bottom: 0; */
 }
 
 .header__container {
   box-sizing: border-box;
   width: 100%;
-  /* width: 360px; */
-  padding: 2rem 1rem 13rem;
+  padding: 32px 16px 208px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +91,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .header__content {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 1.9rem;
+  margin-bottom: 30px;
   align-items: center;  
 }
 
@@ -103,7 +99,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   position: relative;
   z-index: 3;
   width: 100%;
-  max-width: 16.8rem;  
+  max-width: 266px;  
 }
 
 .header__menu {
@@ -111,8 +107,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .header__burger {
-  width: 1em;
-  height: 0.8em;  
+  width: 20px;
+  height: 20px;  
   border: none;
   padding: 0;
 
@@ -123,7 +119,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   cursor: pointer;
   z-index: 1;
   margin-left: auto;
-  margin-bottom: 11rem;
+  margin-bottom: 176px;
 }
 
 .header__burger:before, .header__burger:after {
@@ -131,7 +127,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   width: 100%;
   height: 20%;
 
-  background-color: white;  
+  background-color: #fff;  
 
   position: absolute;
   left: 0;
@@ -148,9 +144,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .header__burger-label {
   width: 100%;
   height: 20%;
-  margin-top: -0.1em;  
+  margin-top: -2px;  
 
-  background-color: #ffffff;  
+  background-color: #fff;  
 
   position: absolute;
   left: 0;
@@ -159,33 +155,32 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 .header__title {
   position: relative;
-  color: white;
+  color: #fff;
   z-index: 2;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 26px;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 1.35;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.2px;
-
 }
 
 /* TRANDS */
 .trands__wrap {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 2.75rem;
+  margin-bottom: 44px;
 }
 
 .trands__title {
   text-transform: uppercase;
-  color: black;
+  color: #000;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
   text-align: center;
-  margin-bottom: 1.5rem;  
+  margin-bottom: 24px;  
 }
 
 .trands__title::after {
@@ -194,8 +189,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5rem;
-  width: 4rem;
+  margin-top: 8px;
+  width: 64px;
   height: 3px;
   background: var(--main-color);
 }
@@ -209,7 +204,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   min-height: 231px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: black;
+  background-color: #000;
   background-size: cover;
   position: relative;
   display: flex;
@@ -251,25 +246,25 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .trands__article-wrap {
   z-index: 2;
   border: 3px solid var(--main-color);
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-bottom: 22px; /*change*/
-  padding-top: 28px;    /*change*/
-  padding-right: 13px;   /*change*/
-  padding-left: 20px;   /*change*/
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-bottom: 22px; 
+  padding-top: 28px;    
+  padding-right: 13px;   
+  padding-left: 20px;   
 }
       
 .trands__tag {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .trands__tag-item {
   text-transform: uppercase;
-  font-weight: 700;
-  margin-right: 1rem;
+  font-weight: bold;
+  margin-right: 16px;
   color: var(--main-color);
 }
 
@@ -285,9 +280,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 .trands__tag-title {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 .trands__tag-title:hover {
@@ -298,8 +293,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .page-wrap {
   box-sizing: border-box;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -311,26 +306,26 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .article {
   box-sizing: border-box;
   flex-direction: column;
-  margin-bottom: 3.92rem;
+  margin-bottom: 64px;
 }
 
 .article-img-link {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 0.5rem;    
+  margin-bottom: 8px;    
 }
 
 .article-teg {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .article-teg-item {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--main-color);
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .article-teg-item:nth-last-child(1) {
@@ -347,8 +342,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 .article-title {
   text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 16px;
+  margin-bottom: 16px;
   line-height: 1.14; 
 }
 
@@ -361,7 +356,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .news-text-meta {
-  margin-bottom: 1rem;    
+  margin-bottom: 16px;    
 }
 
 .article-date {
@@ -372,12 +367,13 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 
 .article-content-text {
-    font-size: 14px;
+  font-size: 14px;
 }
+
 /* ASSIDE-General*/
 .asside-wrap {
   width: 100%;
@@ -395,8 +391,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 auto;
-  font-size: 1rem;
-  margin-bottom: 2rem;
+  font-size: 16px;
+  margin-bottom: 32px;
   text-align: center;  
 }
 
@@ -405,8 +401,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   display: flex;
   position: relative;
   margin: 0 auto;
-  margin-top: 0.5rem;
-  width: 4rem;
+  margin-top: 8px;
+  width: 64px;
   height: 3px;
   background: var(--main-color);
 }
@@ -415,7 +411,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .sidebar-post {
   box-sizing: border-box;
   display: flex;
-  padding-bottom: 1.3rem;
+  padding-bottom: 20px;
 }
 
 .sidebar-post-img {
@@ -425,7 +421,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   height: 100%;
   object-fit: cover;
   object-position: center;
-  margin-right: 1.25rem;
+  margin-right: 20px;
 }
 
 .post-date {
@@ -451,8 +447,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 /* ASSIDE-SEARCH*/
 .search-form {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .search-label {
@@ -460,25 +456,25 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   -moz-appearance: none;
 
   box-sizing: border-box;
-  margin-right: -0.25rem;
+  margin-right: -4px;
 }
 
 .search-input {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  width: calc(100% - 3rem);
-  height: 3rem;  
+  width: calc(100% - 48px);
+  height: 48px;  
   box-sizing: border-box;
   background-color: #f4f7f6;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
   border: none;
   vertical-align: middle;
 }
 
 .search-input:focus {
-  outline-width: 1px;
+  outline-width: 16px;
   outline-style: solid;
   outline-color: var(--main-color);
 }
@@ -488,12 +484,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   -moz-appearance: none;
   
   vertical-align: middle;
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   background-color: var(--main-color);
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-  background-size: 1rem;
+  background-size: 16px;
   background-position: center;
   cursor: pointer;
 }
@@ -510,11 +506,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   box-sizing: border-box;
   background-color: #f4f7f6;
   width: 100%;
-  height: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-top: -0.5rem;
-  margin-bottom: 1.19rem;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: -8px;
+  margin-bottom: 19px;
 }
 
 .send-input:focus {
@@ -528,14 +524,14 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   -moz-appearance: none;
   
   width: 100%;
-  height: 3rem;
+  height: 48px;
   background-color: var(--main-color);
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: bold;
   color:#ffffff;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 /*ASSIDE-TAGS*/
@@ -545,8 +541,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   color: #000000;
   font-weight: bold;
   font-size: 12px;
-  margin-bottom: 2rem;
-  margin-top: -0.5rem;  
+  margin-bottom: 32px;
+  margin-top: -8px;  
 }
 
 .tags-list-link {
@@ -570,9 +566,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .themes-list-item {
-  margin-top: -0.6rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.59rem;
+  margin-top: -10px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -590,7 +586,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .themes-list-amount {
-  font-size: 0.75rem;
+  font-size: 12px;
   vertical-align: super;
 }
 
@@ -600,9 +596,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
 }
 
 .products-title {
@@ -610,9 +606,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
-  font-size: 1rem;
-  margin-bottom: 1.7rem;
-  margin-top: 2.5rem;
+  font-size: 16px;
+  margin-bottom: 28px;
+  margin-top: 40px;
 }
 
 .products-title:after {
@@ -621,7 +617,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   position: relative;
   margin: 0 auto;
   margin-top: 10px;
-  width: 4rem;
+  width: 64px;
   height: 3px;
   background: var(--main-color);
 }
@@ -631,8 +627,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding-left: 1.375rem;
-  padding-right: 1.375rem;
+  padding-left: 22px;
+  padding-right: 22px;
   width: 100%;
 }
 
@@ -642,7 +638,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 .products-cards-img {
   display: flex;
-  justify-content: center; /*возможно падинги*/
+  justify-content: center;
 }
 
 .cards-img {
@@ -656,15 +652,15 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 .products-description-wrap {
   border: 3px solid var(--main-color);
-  margin: -2rem -1.5rem;
-  padding: 2rem 1.25rem 1.5rem;
+  margin: -32px -24px;
+  padding: 32px 20px 24px;
 }
 
 .product-description {
   color: inherit;
   font-weight: 400;
   font-size: 15px;
-  margin-bottom: 1.625rem;
+  margin-bottom: 26px;
 }
 
 .product-description-link {
@@ -681,12 +677,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
-  margin-top: 1rem;
+  margin-top: 16px;
   margin-bottom: 5px;
 }
 
 .product-text {
-  padding-bottom: 1.5rem;
+  padding-bottom: 24px;
 }
 
 .product-footer {
@@ -704,7 +700,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 
 .product-price {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .product-price-old {
@@ -723,7 +719,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
 }
 
 .product-button:hover {
@@ -734,8 +730,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .footer-wrap {
   box-sizing: border-box;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -744,18 +740,18 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .footer-container {
   width: 100%;
   background-color: #f4f7f6;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 .footer-list {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-list-item {
-  margin-right: 1.5rem;
+  margin-right: 24px;
 }
 
 .footer-list-item:nth-last-child(1) {
@@ -786,7 +782,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   color: #999999;
   font-size: 12px;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 /*POPUP*/
@@ -804,7 +800,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 .popup {
   width: 100%;
   height: 100vh;
-  /* box-sizing: border-box; */
 
   background-color: rgba(0, 0, 0, 0.6);
   overflow-y: auto;
@@ -820,7 +815,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .popup-container {
-  width: 17rem;
+  width: 272px;
   padding: 26px 30px 32px;
   background-color: #fff;
   position: relative;
@@ -831,8 +826,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .button-close {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   background-size: auto;
   
   background-image: url(../svg/form-x.svg);
@@ -842,14 +837,14 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   cursor: pointer;
   
   position: absolute;
-  right: -1.75rem;
-  top: -3.5rem;
+  right: -28px;
+  top: -56px;
 }
 
 .popup-title {
   color: #000;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   display: block;
@@ -888,7 +883,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-size: 10px;
-  background-position: center right 0.5rem;
+  background-position: center right 8px;
   cursor: pointer;
 }
 
