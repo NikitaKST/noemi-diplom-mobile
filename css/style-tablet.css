@@ -97,11 +97,28 @@
 }
 
 .article {
-  margin-bottom: 107px;
+  margin-bottom: 68px;
 }
 
 .article-img-link {
   width: 100%;
+}
+
+.article-teg {
+  margin-bottom: 12px;
+}
+
+.article-title {
+  font-size: 17px;
+  margin-bottom: 32px;
+}
+
+.news-text-meta {
+  margin-bottom: 30px;    
+}
+
+.article-content-text {
+  font-size: 15px;
 }
 
 .asside-wrap {
