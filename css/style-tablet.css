@@ -146,6 +146,7 @@
 .products-wrap {
   padding-left: 36px;
   padding-right: 36px;
+  margin-bottom: 28px;
 }
 
 .products-title {
@@ -176,4 +177,12 @@
   margin-bottom: 23px;
 }
 
+/*FOOTER*/
+.footer-wrap {
+  padding-left: 36px;
+  padding-right: 36px;
+}
 
+.footer-container {
+  margin-bottom: 46px;
+}
