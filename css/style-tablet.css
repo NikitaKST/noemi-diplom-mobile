@@ -119,8 +119,9 @@
   font-size: 15px;
 }
 
+/* ASSIDE */
 .asside-wrap {
-  width: calc(39%); 
+  width: 39%; 
 }
 
 .aside-title {
