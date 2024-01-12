@@ -474,7 +474,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
 }
 
 .search-input:focus {
-  outline-width: 16px;
+  outline-width: 1px;
   outline-style: solid;
   outline-color: var(--main-color);
 }
@@ -532,6 +532,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   font-weight: bold;
   color:#ffffff;
   margin-bottom: 40px;
+}
+
+.send-button:hover {
+  background-color: #000;
 }
 
 /*ASSIDE-TAGS*/
