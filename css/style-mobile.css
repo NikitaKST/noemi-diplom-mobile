@@ -195,7 +195,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   background: var(--main-color);
 }
 
-.trandstrands__content {
+.trands__content {
   box-sizing: border-box;
   width: 100%;
 }
