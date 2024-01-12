@@ -141,3 +141,39 @@
 .tags-list {
   margin-bottom: 58px;
 }
+
+/*OUR PRODUCTS*/
+.products-wrap {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.products-title {
+  margin-top: -3px;
+  font-size: 18px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10%;
+}
+
+.products-cards {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-cards .products-description-wrap {
+  padding-bottom: 26px;
+  flex-grow: 1; 
+}
+
+.product-description {
+  margin-bottom: 23px;
+}
+
+

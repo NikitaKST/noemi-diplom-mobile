@@ -629,7 +629,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, a, address, img, ol, 
   flex-direction: column;
   padding-left: 22px;
   padding-right: 22px;
-  width: 100%;
 }
 
 .products-cards {
